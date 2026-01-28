@@ -11,7 +11,10 @@ body{
 
 a{
     text-decoration: none;
+    margin: 0;
 }
+
+/* Estilos del header */
 
 header{
     position: fixed;
@@ -21,7 +24,7 @@ header{
     padding: 2rem 3rem;
     align-items: center;
     justify-content:space-between;
-    background: radial-gradient(circle, #14133d, #262e7a);
+    background: radial-gradient(circle, #183d6d, #262e7a);
 }
 
 .person{
@@ -30,20 +33,22 @@ header{
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+     transition: 0.5s;
 }
 
 .person svg{
     width: 2.5rem;
     height: 2.5rem;
-    color: #76a8d6;
+    color: #76c8d6;
 }
 
 .person h2{
     color: #b2d0ec;
 }
 
-.person h2:hover{
-    animation: forwards;
+.person:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 .menu ul{
@@ -58,10 +63,41 @@ header{
     justify-content: center;
     gap: 0.5rem;
     color: #acc6df;
+    transition: 0.5s;
+}
+
+.menu li:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
 }
 
 .menu svg{
     width: 1.5rem;
     height: 1.5rem;
-    color: #76a8d6;
+    color: #76c8d6;
+}
+
+/* Estilos del banner de inicio */
+.banner{
+    width: 100%;
+    background: url(../img/pngtree-abstract-technology-background-line-high-tech-electricity-image_430309.jpg);
+    padding: 10rem 3rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner_img{
+    display: flex;
+    position: static;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.banner_img img{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 100%;
+
 }
