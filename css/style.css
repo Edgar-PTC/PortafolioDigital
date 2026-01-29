@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    user-select: none;
+}
+
+a{
+    text-decoration: none;
+    margin: 0;
+}
+
+/* Estilos del header */
+
+header{
+    position: fixed;
+    top: 0cm;
+    display: flex;
+    width: 100%;
+    padding: 2rem 3rem;
+    align-items: center;
+    justify-content:space-between;
+    background: radial-gradient(circle, #183d6d, #262e7a);
+}
+
+.person{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+     transition: 0.5s;
+}
+
+.person svg{
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #76c8d6;
+}
+
+.person h2{
+    color: #b2d0ec;
+}
+
+.person:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.menu li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: #acc6df;
+    transition: 0.5s;
+}
+
+.menu li:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.menu svg{
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #76c8d6;
+}
+
+/* Estilos del banner de inicio */
+.banner{
+    width: 100%;
+    background: url(../img/pngtree-abstract-technology-background-line-high-tech-electricity-image_430309.jpg);
+    padding: 10rem 3rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner_img{
+    display: flex;
+    position: static;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.banner_img img{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 100%;
+
+}
